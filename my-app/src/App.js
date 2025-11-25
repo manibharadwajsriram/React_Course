@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Test from './Components/Test';
 import State from'./Components/State';
-
+import { ConditionalRendering ,  TerniaryCondition, AndOperator} from './Components/Conditional';
+import Products from './Components/ListRendering';
 function App() {
   return (
     // <div className="App">
@@ -22,7 +23,17 @@ function App() {
     //   </header>
     // </div>
     // <Test/>
-    <State/>
+    // <State/>
+    // <>
+    //   <ConditionalRendering isLoggedIn={"ADMIN"}/>
+    //   <ConditionalRendering isLoggedIn={""}/>
+    //   <TerniaryCondition isLoggedIn={"ADMIN"} />
+    //   <TerniaryCondition isLoggedIn={""}/>
+    //   <AndOperator isLoggedIn={"ADMIN"} />
+    //   <AndOperator isLoggedIn={""}/>
+    // </>
+
+    <Products />
   );
 }
 
