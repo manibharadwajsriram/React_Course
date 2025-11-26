@@ -4,6 +4,7 @@ import Test from './Components/Test';
 import State from'./Components/State';
 import { ConditionalRendering ,  TerniaryCondition, AndOperator} from './Components/Conditional';
 import Products from './Components/ListRendering';
+import {Type1List,ToDoList} from './Components/Lists';
 function App() {
   return (
     // <div className="App">
@@ -33,7 +34,9 @@ function App() {
     //   <AndOperator isLoggedIn={""}/>
     // </>
 
-    <Products />
+    // <Products />
+    // <Type1List />
+    <ToDoList/>
   );
 }
 
