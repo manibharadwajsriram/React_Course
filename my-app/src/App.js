@@ -5,6 +5,9 @@ import State from'./Components/State';
 import { ConditionalRendering ,  TerniaryCondition, AndOperator} from './Components/Conditional';
 import Products from './Components/ListRendering';
 import {Type1List,ToDoList} from './Components/Lists';
+import { Form,DisplayName } from './Components/Forms'; 
+import Getapi from './Components/API/GETAPI';
+import UseMemo from './Components/Memo/UseMemo';
 function App() {
   return (
     // <div className="App">
@@ -36,7 +39,13 @@ function App() {
 
     // <Products />
     // <Type1List />
-    <ToDoList/>
+    // <ToDoList/>
+    // <DisplayName/>
+    // <NameonSubmit />
+    // <Form />
+    // <DisplayName />
+    // <Getapi />
+    <UseMemo />
   );
 }
 
