@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './ProductCard.css';
+import getGeminiAISummary from "./OpenAPI";
 
 function ProductCard({product, onPurchase, isFavorite,onFavorite}){
     const [showMore,setShowMore]=useState(false);
@@ -9,8 +10,11 @@ function ProductCard({product, onPurchase, isFavorite,onFavorite}){
     function handleFavoriteClick(){
         onFavorite(product.id)
     }
-    function handleGenAISummary(){
-
+    const handleGenAISummary= async() => {
+      setIsLoading(true);
+      const res = await getGeminiAISummary(product.title);
+      setSummary(res);
+      setIsLoading(false);
     }
     const handlePurchaseSingeItem = () =>{
         onPurchase(product.id,product.stockCount -1,-1);

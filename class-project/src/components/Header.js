@@ -8,7 +8,7 @@ function Header(){
         <header className="headerStyle">
             <h1>My Product Store</h1>
             <div className="linkStyle">
-                <Link className="cartColor">Cart</Link>
+                <Link className="cartColor" to="/cart">Cart</Link>
             </div>
         </header>
     );
